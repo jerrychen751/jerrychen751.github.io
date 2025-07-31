@@ -7,26 +7,41 @@
 
 /* Comments */
 .highlight .c, .highlight .ch, .highlight .cm, .highlight .cp, .highlight .cpf, .highlight .c1, .highlight .cs {
-  color: #5C6370;
-  font-style: italic;
+  color: #7F8C8D; /* Lighter gray for comments */
+  font-style: normal; /* Not italicized */
 }
 
 /* Errors */
-.highlight .err { color: #E06C75; background-color: #282C34; }
+.highlight .err, .highlight .ni { color: #E06C75; background-color: #282C34; } /* Red for errors and invalid names */
 
-/* Keywords */
-.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .ow {
-  color: #C678DD;
+/* Keywords (excluding constants) */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .ow {
+  color: #C678DD; /* Purple */
 }
 
 /* Literals (Numbers, Booleans) */
-.highlight .l, .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il {
-  color: #D19A66;
+.highlight .l, .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il, .highlight .kc {
+  color: #D19A66; /* Orange for numbers and boolean constants */
 }
 
-/* Names (Variables, Functions, Classes) */
-.highlight .n, .highlight .na, .highlight .nb, .highlight .nf, .highlight .nx, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm {
+/* Names - General (Variables) */
+.highlight .n, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm {
   color: #E06C75;
+}
+
+/* Names - Functions (Built-in and User-defined) */
+.highlight .nb, .highlight .nf, .highlight .fm {
+  color: #61AFEF; /* Blue for all functions */
+}
+
+/* Names - Classes, Types, Namespaces, Other, Attributes, Tags */
+.highlight .nc, .highlight .nt, .highlight .na, .highlight .nn, .highlight .nx {
+  color: #E5C07B; /* Yellow/Orange for classes, types, namespaces, etc. */
+}
+
+/* Names - Builtin Pseudo (e.g., self, this) */
+.highlight .bp {
+  color: #56B6C2; /* Cyan for builtin pseudo */
 }
 
 /* Operators */
@@ -54,37 +69,5 @@
 .highlight .gu { color: #5C6370; font-weight: bold; } /* Subheading */
 .highlight .gt { color: #E06C75; } /* Traceback */
 
-/* Name.Builtin.Pseudo */
-.highlight .bp { color: #56B6C2; }
-
-/* Name.Class */
-.highlight .nc { color: #E5C07B; }
-
-/* Name.Decorator */
-.highlight .nd { color: #61AFEF; }
-
-/* Name.Entity */
-.highlight .ni { color: #D19A66; }
-
-/* Name.Exception */
-.highlight .ne { color: #E06C75; }
-
-/* Name.Function */
-.highlight .nf { color: #61AFEF; }
-
-/* Name.Label */
-.highlight .nl { color: #E5C07B; }
-
-/* Name.Namespace */
-.highlight .nn { color: #E5C07B; }
-
-/* Name.Tag */
-.highlight .nt { color: #E06C75; }
-
 /* Text.Whitespace */
 .highlight .w { color: #ABB2BF; }
-
-/* Other specific rules if needed */
-.highlight .fm { color: #61AFEF; } /* Name.Function.Magic */
-.highlight .na { color: #D19A66; } /* Name.Attribute */
-.highlight .nt { color: #E06C75; } /* Name.Tag */
