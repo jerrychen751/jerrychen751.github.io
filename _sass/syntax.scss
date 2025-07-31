@@ -19,9 +19,9 @@
   color: #C678DD; /* Purple */
 }
 
-/* Literals (Numbers, Booleans) */
-.highlight .l, .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il, .highlight .kc {
-  color: #D19A66; /* Orange for numbers and boolean constants */
+/* Literals (Numbers, Booleans, None) */
+.highlight .l, .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il, .highlight .kc, .highlight .lo {
+  color: #D19A66; /* Orange for numbers, boolean constants, and None */
 }
 
 /* Names - General (Variables) */
@@ -29,19 +29,14 @@
   color: #E06C75;
 }
 
-/* Names - Functions (Built-in and User-defined) */
-.highlight .nb, .highlight .nf, .highlight .fm {
-  color: #61AFEF; /* Blue for all functions */
+/* Names - Functions (Built-in and User-defined) and Decorators */
+.highlight .nb, .highlight .nf, .highlight .fm, .highlight .nd {
+  color: #61AFEF; /* Blue for all functions and decorators */
 }
 
-/* Names - Classes, Types, Namespaces, Other, Attributes, Tags */
-.highlight .nc, .highlight .nt, .highlight .na, .highlight .nn, .highlight .nx {
-  color: #E5C07B; /* Yellow/Orange for classes, types, namespaces, etc. */
-}
-
-/* Names - Builtin Pseudo (e.g., self, this) */
-.highlight .bp {
-  color: #56B6C2; /* Cyan for builtin pseudo */
+/* Names - Classes, Types, Namespaces, Other, Attributes, Tags, and Builtin Pseudo (self) */
+.highlight .nc, .highlight .nt, .highlight .na, .highlight .nn, .highlight .nx, .highlight .bp {
+  color: #E5C07B; /* Yellow/Orange for classes, types, namespaces, etc., and self */
 }
 
 /* Operators */
@@ -55,8 +50,13 @@
 }
 
 /* Strings */
-.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
   color: #98C379;
+}
+
+/* Escape sequences within strings */
+.highlight .se {
+  color: #56B6C2; /* Aqua for escape sequences */
 }
 
 /* Generic */
