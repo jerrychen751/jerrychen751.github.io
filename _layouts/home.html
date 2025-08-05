@@ -4,13 +4,16 @@ layout: default
 
 <header>
 {% if site.theme_config.show_navbar == true %}
-  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
+  <div class="header-flex">
+    {% include horizontal_list.html collection=site.data.home.navbar_entries class="navbar" %}
+    {% include toggle_theme_button.html %}
+  </div>
   <div class="dashed"></div>
 {% endif %}
 
-  <h1>{{ site.header_name }}</h1>
+  <h1 class="home-title">{{ site.header_name }}</h1>
   {% if site.theme_config.show_description == true %}
-    <p>{{ site.description }}</p>
+    <div class="home-description">{{ site.home_description | newline_to_br }}</div>
   {% endif %}
 </header>
 

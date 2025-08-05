@@ -1,22 +1,21 @@
+# Website Info
 title: Jerry Chen | Personal Site
 author: Jerry Chen
 email: jerrychen@gatech.edu
 
 url: https://jerrychen751.github.io/ # root address of the site
-bseurl: ""
+baseurl: ""
+
 description: > # description of the site (multiple lines allowed)
-  The personal website and portfolio of Jerry Chen (CS major at Georgia Tech; AI + SysArch concentrations). Explore my past experiences, projects, resume, and Math & CS notes.
+  Jerry Chen's personal portfolio and website. A Georgia Tech CS student studying AI and Systems/Architecture, showcasing projects, experiences, and notes.
 
-# ???
-permalink: /:slug
+home_description: |
+  Hey, thanks for stopping by! My name is Jerry, and I'm currently studying Computer Science at Georgia Tech with a focus on AI + Systems and Architecture.
 
+  This site is always growing as I add new things, but feel free to check out my projects, read over my past experiences, or go through any problems/topics that I've taken notes on.
+
+permalink: /:slug # removes date from filename (uses slug portion for URL)
 favicon: "./logo.png" # relative path to site's favicon
-
-twitter:
-    username: abhinav # update or delete this
-    card: summary_large_image
-
-
 
 header_name: "Jerry Chen"
 
@@ -42,9 +41,6 @@ theme_config:
     title_misc_list: Details
     title_blog: Blog
     title_old_projects: Old Projects
-
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 highlighter: rouge
 

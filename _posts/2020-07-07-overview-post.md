@@ -53,9 +53,56 @@ Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus 
 
 Now some code:
 
-```
-const ultimateTruth = 'follow middlepath';
-console.log(ultimateTruth);
+```python
+# --- Syntax Highlighting Test Snippet ---
+
+import os
+import re
+
+@my_decorator
+class SyntaxTest(BaseClass):
+    """
+    This is a docstring, which is a multi-line string.
+    It should be highlighted correctly. Escape sequences like \n work here.
+    """
+    
+    # Class-level variables and constants
+    SOME_CONSTANT = 1_234_567.89
+    IS_ACTIVE = True
+    HEX_VALUE = 0xDEADBEEF
+    
+    def __init__(self, name: str, value: int = 42):
+        # f-string and raw string examples
+        self.name = f"Test-{name}"
+        self.path = r'C:\Users\Test\Path'
+        self.value = value
+    
+    async def run_operation(self, factor=1.5e-2):
+        """An async function with type hints and default arguments."""
+        # Keywords like 'if', 'else', 'for', 'in', 'try', 'except'
+        if self.value > 0 and self.name is not None:
+            try:
+                # A for loop and list comprehension
+                results = [i ** 2 for i in range(self.value)]
+                
+                # A regular expression
+                regex = re.compile(r'(\d{3,5})\s+(test|final)?')
+                match = regex.search("12345 test")
+                
+                print(f"Match found: {match}")
+                
+            except ValueError as e:
+                # Handle a specific exception
+                print(f"Error: {e}")
+        else:
+            # A pass statement
+            pass
+            
+# Standalone function with a lambda
+def get_operator(op_type):
+    if op_type == "add":
+        return lambda x, y: x + y
+    return None
 ```
 
 And here is some `inline code`!
