@@ -7,7 +7,7 @@ url: https://jerrychen751.github.io/ # root address of the site
 baseurl: ""
 
 description: > # description of the site (multiple lines allowed)
-  Jerry Chen's personal portfolio and website. A Georgia Tech CS student studying AI and Systems/Architecture, showcasing projects, experiences, and notes.
+  Jerry Chen's personal portfolio and website. Georgia Tech CS student studying AI and Systems/Architecture, showcasing projects, experiences, and notes.
 
 home_description: |
   Hey, thanks for stopping by! My name is Jerry, and I'm currently studying Computer Science at Georgia Tech with a focus on AI + Systems and Architecture.
