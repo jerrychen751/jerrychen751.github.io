@@ -6,16 +6,16 @@ email: jerrychen@gatech.edu
 url: https://jerrychen751.github.io/ # root address of the site
 baseurl: ""
 
-description: > # description of the site (multiple lines allowed)
+description: >
   Jerry Chen's personal portfolio and website. Georgia Tech CS student studying AI and Systems/Architecture, showcasing projects, experiences, and notes.
 
 home_description: |
-  Hey, thanks for stopping by! My name is Jerry, and I'm currently studying Computer Science at Georgia Tech with a focus on AI + Systems and Architecture.
+  Hey, thanks for stopping by! My name is Jerry, and I'm currently studying Computer Science at Georgia Tech with a focus on Artificial Intelligence + Systems and Architecture.
 
   This site is always growing as I add new things, but feel free to check out my projects, read over my past experiences, or go through any problems/topics that I've taken notes on.
 
 permalink: /:slug # removes date from filename (uses slug portion for URL)
-favicon: "./logo.png" # relative path to site's favicon
+favicon: "./assets/images/other/logo.png" # relative path to site's favicon
 
 header_name: "Jerry Chen"
 
@@ -27,7 +27,7 @@ theme_config:
   show_description: true # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: true # show footer links in home page,add in _data/home.yml
-  show_copyright: false # show copyright notice in footer
+  show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
@@ -50,3 +50,8 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/

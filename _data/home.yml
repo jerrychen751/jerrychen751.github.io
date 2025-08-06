@@ -1,8 +1,14 @@
 navbar_entries:
-  - title: about
+  - title: Home
+    url: /
+
+  - title: About Me
     url: about
 
-  - title: blog
+  - title: Notes
+    url: /notes/
+
+  - title: Blog
     url: blog
 
 project_entries:
@@ -54,8 +60,7 @@ footer_entries:
   - title: github
     url: https://github.com/abhinavs
 
-  - title: feed
-    url: feed.xml
+  
 
 misc_entries:
   - title: this is an example vertical list

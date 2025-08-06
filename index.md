@@ -1,4 +1,4 @@
 ---
-title: Jerry Chen
+title: Home - Jerry Chen
 layout: home
 ---
