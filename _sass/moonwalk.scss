@@ -260,6 +260,25 @@ p code, li code {
   text-decoration: none;
 }
 
+.back-button {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--links);
+  margin-right: 1em; /* Add some space to the right */
+}
+
+.header-right-group {
+  display: flex;
+  align-items: center;
+}
+
+.footer-spacing {
+  margin-top: 1.5rem; /* Adjust this value to increase or decrease the space */
+}
+
+
 /* ==========================================================================
    Theme Switcher (Light/Dark Mode)
    ========================================================================== */

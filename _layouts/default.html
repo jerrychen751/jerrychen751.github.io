@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
   
+  <!-- Head of HTML File (Favicon, Style, Metadata)-->
   {%- include head.html -%}
   
   <body>
@@ -11,7 +12,15 @@
           <header>
             <div class="header-flex">
               {% include horizontal_list.html collection=site.data.home.navbar_entries %}
-              {% include toggle_theme_button.html %}
+              <div class="header-right-group">
+                {% assign url_parts = page.url | split: '/' %}
+                {% if url_parts.size > 2 %}
+                  {% assign parent_url = url_parts | slice: 0, url_parts.size | pop | join: '/' %}
+                  {% if parent_url == "" %}{% assign parent_url = "/" %}{% endif %}
+                  <a href="{{ parent_url | relative_url }}" class="back-button">Back</a>
+                {% endif %}
+                {% include toggle_theme_button.html %}
+              </div>
             </div>
             <div class="dashed"></div>
           </header>
@@ -22,7 +31,7 @@
         
         <!-- Footer (Social Links) -->
         {% if site.theme_config.show_footer == true %}
-          <footer>
+          <footer class="footer-spacing">
             <div class="dashed"></div>
             <div class="header-flex">
             {% include horizontal_list.html collection=site.data.home.footer_entries %}

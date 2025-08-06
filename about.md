@@ -1,7 +1,9 @@
 ---
 title: About Me - Jerry Chen
-layout: post
+layout: default
 ---
+
+# About Me
 
 This is an example page!
 
