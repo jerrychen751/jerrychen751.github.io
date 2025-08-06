@@ -57,10 +57,11 @@ old_project_entries:
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: github
-    url: https://github.com/abhinavs
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/jerry-chen751/
 
-  
+  - title: Github
+    url: https://github.com/jerrychen751
 
 misc_entries:
   - title: this is an example vertical list

@@ -1,5 +1,5 @@
 ---
-title: My Notes
+title: My Notes - Jerry Chen
 layout: notes
 ---
 
